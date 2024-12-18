@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Google</title>
+</head>
+<body>
+    <h1>Login with Google</h1>
+    <button id="google-login">Login with Google</button>
+
+    <script>
+        const googleLoginButton = document.getElementById('google-login');
+
+        googleLoginButton.addEventListener('click', () => {
+            // Відкриваємо сторінку для Google OAuth
+            window.location.href = 'http://localhost:3006/auth/google';
+        });
+    </script>
+</body>
+</html>
